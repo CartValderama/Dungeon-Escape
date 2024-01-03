@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background: #3f3851;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    color: wheat;
+    line-height: 2.5rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.two,
+.three,
+.four{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+.one,
+.two,
+.three,
+.four{
+    text-align: center;
+}
+.four div{
+    width: 50%
+}
+.four div img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 5px 5px #2b2638;
+}
+#game-title {
+    padding: 10px;
+    font-size: 3rem;
+}
+
+#controls {
+    text-align: center;
+    width: 40%;
+}
+#task {
+    text-align: center;
+    width: 40%;
+}
+
+#controls ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+canvas {
+    image-rendering: pixelated;
+    border-top: 1px double wheat;
+    border-bottom: 1px double wheat;
+    margin: 1rem 0;
+}

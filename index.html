@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Game Platformer</title>
+</head>
+
+<body>
+    <section class="container one">
+        <h1 id="game-title">DungeonKeep Escape</h1>
+        <p>Embark on a keyboard-only platformer in a pixelated fortress. No enemies, just precise navigation through
+            puzzles and platforms.</p>
+        <canvas></canvas>
+    </section>
+    <section class="container two">
+
+        <div id="controls">
+            <h2>Controls</h2>
+            <div>
+                <ul>
+                    <li>W key - Jump, Interact</li>
+                    <li>A key - Sprint left</li>
+                    <li>D key - Sprint right</li>
+                </ul>
+            </div>
+        </div>
+        <div id="task">
+            <h2>Task</h2>
+            <p>Go through every door and beat each level.
+            </p>
+        </div>
+
+    </section>
+    <section class="container three">
+        <div>
+            <h2>About the game</h2>
+            <p>JavaScript handles the coding, while the Tiled application seamlessly weaves together detailed maps. This
+                uncomplicated yet potent pairing ensures a seamlessly running game with an aesthetically pleasing
+                environment.</p>
+        </div>
+    </section>
+    <section class="container four">
+        <div>
+            <h2>Julianne</h2>
+            <img src="./img/julianne.png" alt="tia">
+        </div>
+        <div>
+            <h2>Mahal Kita</h2>
+            <p>Wishing you joy and warmth this holiday season. Merry Christmas!</p>
+        </div>
+
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+    integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script/utils.js"></script>
+<script src="script/data/collisions.js"></script>
+<script src="script/classes/CollisionBlock.js"></script>
+<script src="script/classes/Sprite.js"></script>
+<script src="script/classes/Player.js"></script>
+<script src="script/eventListeners.js"></script>
+<script src="script/data/audio.js"></script>
+<script src="script/index.js"></script>
+
+</html>
