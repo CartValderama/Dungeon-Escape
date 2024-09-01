@@ -35,4 +35,4 @@ This game is developed using:
 - **Tiled Application:** For creating detailed 2D maps.
 - **Howler.js:** For managing game audio.
 - **GSAP:** For smooth animations and transitions.
-
+- **OOP Principles:** The game uses Object-Oriented Programming (OOP) for better code organization. The `Player` class handles player-specific actions and animations, while levels are modularly defined with their own initialization methods, making the game scalable and easier to maintain.
