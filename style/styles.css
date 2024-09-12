@@ -82,7 +82,7 @@ canvas {
 }
 
 @media only screen and (max-width: 700px) {
-    section {
+    body {
         display: none;
     }
     .secret-message {
