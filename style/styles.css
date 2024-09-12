@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.secret-message{
+    display: hidden
+}
+
 body {
     background: #3f3851;
     margin: 0;
@@ -74,4 +78,19 @@ canvas {
     border-top: 1px double wheat;
     border-bottom: 1px double wheat;
     margin: 1rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .main-container {
+        display: none;
+    }
+    .secret-message {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .secret-message p {
+        font-size: 2rem;
+        color: red;
+    }
 }
