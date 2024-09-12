@@ -5,11 +5,14 @@
 }
 
 .secret-message{
-    display: hidden
-    opacity: 0
+    display: none
 }
 
 body {
+    background: #3f3851;
+}
+
+.main-container {
     background: #3f3851;
     margin: 0;
     padding: 1rem 0;
@@ -82,12 +85,11 @@ canvas {
 }
 
 @media only screen and (max-width: 700px) {
-    body {
+    .main-container {
         display: none;
     }
     .secret-message {
         display: flex;
-        opacity: 1
     }
     .secret-message p {
         font-size: 2rem;
