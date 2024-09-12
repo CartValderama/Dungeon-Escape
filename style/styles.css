@@ -6,6 +6,7 @@
 
 .secret-message{
     display: hidden
+    opacity: 0
 }
 
 body {
@@ -86,8 +87,7 @@ canvas {
     }
     .secret-message {
         display: flex;
-        text-align: center;
-        justify-content: center;
+        opacity: 1
     }
     .secret-message p {
         font-size: 2rem;
