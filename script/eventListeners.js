@@ -1,7 +1,7 @@
 // when pressed
 window.addEventListener("keydown", (event) => {
   if (player.preventInput) return;
-  if (level === 7) return
+  if (level === 7) return;
   switch (event.key) {
     case "w":
       for (let i = 0; i < doors.length; i++) {
@@ -66,4 +66,4 @@ window.onload = () => {
     audio.map.play();
     clicked = true;
   }
-}
+};

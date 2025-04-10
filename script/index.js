@@ -1,6 +1,7 @@
 // setup canvas of the game here
 const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
+const playAgain = document.getElementById("play-again");
 
 // 16 x 9 ratio size of the game canvas
 // The game will use 64px x 64px tiles
@@ -61,7 +62,7 @@ const player = new Player({
             level++;
             // temporary loop, ill add maps later
             if (level === 7) {
-              window.open('https://youtube.com/clip/UgkxR-PNsrzYQEImH5SAZEEs6b022DmuzvWr?si=7MERfX0XMnx7iLIJ', '_blank');
+              playAgain.style.display = "block";
               audio.map.stop();
             }
             levels[level].init();
@@ -77,6 +78,17 @@ const player = new Player({
     },
   },
 });
+
+const play = () => {
+  playAgain.addEventListener("click", () => {
+    playAgain.style.display = "none";
+    level = 0;
+    levels[1].init();
+    audio.map.play();
+    player.switchSprite("idleRight");
+    player.preventInput = false;
+  });
+};
 
 let level = 1;
 let levels = {
@@ -291,7 +303,7 @@ let levels = {
       ];
     },
   },
-  7: {  
+  7: {
     init: () => {
       parsedCollisions = collisionsLevel7.parse2D();
       // start creating collision boundaries
